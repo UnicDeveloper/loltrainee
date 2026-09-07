@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LoLTrainee — League coaching companion</title>
+    <meta
+      name="description"
+      content="LoLTrainee is an Overwolf coaching companion for League of Legends: personal pool, draft advice, session goals, and analytics."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="./">LoLTrainee</a>
+        <div class="nav__links">
+          <a href="#features">Features</a>
+          <a href="#download">Download</a>
+          <a href="./privacy.html">Privacy</a>
+          <a href="./terms.html">Terms</a>
+        </div>
+      </nav>
+
+      <header class="hero">
+        <p class="hero__brand">LoLTrainee</p>
+        <p class="hero__line">
+          Overwolf coaching companion for League of Legends — personal pool, draft focus, session goals, and analytics. Learn better. No cheats.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#download">Get on Overwolf</a>
+          <a class="btn btn--ghost" href="./privacy.html">Privacy Policy</a>
+        </div>
+      </header>
+
+      <section class="section" id="features" aria-labelledby="features-title">
+        <h2 id="features-title">Built to coach, not to carry</h2>
+        <p>Everything stays on your machine. Insights come from your own match history via Riot’s APIs.</p>
+        <ul class="feature-list">
+          <li>
+            <strong>Role priorities</strong>
+            <span>Pick 2–3 lanes and keep coaching focused where you actually climb.</span>
+          </li>
+          <li>
+            <strong>Personal champion pool</strong>
+            <span>Pool and heat maps built from your recent games — win rate, KDA, CS/min.</span>
+          </li>
+          <li>
+            <strong>Draft + session coaching</strong>
+            <span>Champ select callouts and between-game focus so the next match has a clear goal.</span>
+          </li>
+          <li>
+            <strong>In-game overlay</strong>
+            <span>Light focus panel. Toggle anytime. Never automation, never fog abuse.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="download" aria-labelledby="download-title">
+        <h2 id="download-title">Download</h2>
+        <p>
+          LoLTrainee will be available on the
+          <a href="https://www.overwolf.com/appstore" rel="noopener noreferrer">Overwolf Appstore</a>
+          after Riot and Overwolf review. Until then, this page is the public product home for compliance and support.
+        </p>
+        <p>
+          Support:
+          <a href="mailto:samigovera1@gmail.com">samigovera1@gmail.com</a>
+        </p>
+        <aside class="disclaimer">
+          LoLTrainee isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone
+          officially involved in producing or managing Riot Games properties. Riot Games and all associated properties
+          are trademarks or registered trademarks of Riot Games, Inc.
+        </aside>
+      </section>
+
+      <footer class="footer">
+        <span>© <span id="y"></span> LoLTrainee</span>
+        <span>
+          <a href="./privacy.html">Privacy</a>
+          ·
+          <a href="./terms.html">Terms</a>
+        </span>
+      </footer>
+    </div>
+    <script>
+      document.getElementById('y').textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>

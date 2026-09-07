@@ -1,0 +1,59 @@
+html,
+body,
+#root {
+  background: transparent;
+}
+
+body.overlay-body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', 'Candara', 'Trebuchet MS', sans-serif;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: 100vw;
+  height: 100vh;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  background: rgba(10, 14, 20, 0.78);
+  color: #f8fafc;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  user-select: none;
+  overflow: hidden;
+}
+
+.overlay__brand {
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #3dd6c6;
+}
+
+.overlay__status {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.overlay__tips {
+  margin: 0.15rem 0 0;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.2rem;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: #cbd5e1;
+}
+
+.overlay__hotkey {
+  margin: auto 0 0;
+  font-size: 0.65rem;
+  color: #64748b;
+}

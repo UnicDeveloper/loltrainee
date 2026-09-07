@@ -1,0 +1,97 @@
+{
+  "manifest_version": 1,
+  "type": "WebApp",
+  "meta": {
+    "name": "LoL Coach",
+    "author": "LoL Coach",
+    "version": "0.4.0",
+    "minimum-overwolf-version": "0.220.0",
+    "description": "Personalized coaching companion for League of Legends.",
+    "dock_button_title": "LoL Coach",
+    "icon": "icons/IconMouseOver.png",
+    "icon_gray": "icons/IconMouseNormal.png",
+    "launcher_icon": "icons/desktop-icon.ico",
+    "window_icon": "icons/IconMouseOver.png"
+  },
+  "permissions": ["GameInfo", "Hotkeys", "Extensions"],
+  "data": {
+    "start_window": "background",
+    "windows": {
+      "background": {
+        "file": "background.html",
+        "is_background_page": true,
+        "background_optimization": true
+      },
+      "desktop": {
+        "file": "desktop.html",
+        "desktop_only": true,
+        "native_window": true,
+        "resizable": true,
+        "transparent": false,
+        "size": {
+          "width": 1080,
+          "height": 780
+        },
+        "min_size": {
+          "width": 860,
+          "height": 600
+        },
+        "start_position": {
+          "top": 60,
+          "left": 60
+        }
+      },
+      "overlay": {
+        "file": "overlay.html",
+        "in_game_only": false,
+        "resizable": false,
+        "transparent": true,
+        "clickthrough": false,
+        "show_in_taskbar": false,
+        "size": {
+          "width": 280,
+          "height": 220
+        },
+        "start_position": {
+          "top": 36,
+          "left": 36
+        }
+      }
+    },
+    "game_targeting": {
+      "type": "dedicated",
+      "game_ids": [5426]
+    },
+    "game_events": [5426, 10902],
+    "launch_events": [
+      {
+        "event": "GameLaunch",
+        "event_data": {
+          "game_ids": [5426, 10902]
+        },
+        "start_minimized": false
+      }
+    ],
+    "hotkeys": {
+      "lol_coach_toggle_overlay": {
+        "title": "Show/Hide Overlay",
+        "action-type": "custom",
+        "default": "Ctrl+*"
+      }
+    },
+    "externally_connectable": {
+      "matches": [
+        "https://*.api.riotgames.com",
+        "https://ddragon.leagueoflegends.com",
+        "https://*.leagueoflegends.com",
+        "https://api.openai.com",
+        "https://*.openai.com"
+      ]
+    },
+    "developer": {
+      "enable_auto_refresh": true,
+      "reload_delay": 1000,
+      "filter": "*.*"
+    }
+  }
+}

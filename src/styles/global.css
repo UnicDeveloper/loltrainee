@@ -1,0 +1,42 @@
+:root {
+  color-scheme: dark;
+  --bg-0: #0a0e14;
+  --bg-1: #121826;
+  --bg-2: #1a2333;
+  --border: rgba(148, 163, 184, 0.18);
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --accent: #3dd6c6;
+  --accent-ok: #4ade80;
+  --font-display: 'Segoe UI Semibold', 'Trebuchet MS', 'Arial Narrow', sans-serif;
+  --font-body: 'Segoe UI', 'Candara', 'Trebuchet MS', sans-serif;
+  --font-mono: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(61, 214, 198, 0.12), transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, rgba(56, 119, 255, 0.1), transparent 50%),
+    linear-gradient(180deg, var(--bg-1), var(--bg-0));
+  color: var(--text-primary);
+}
+
+button,
+input {
+  font: inherit;
+}
